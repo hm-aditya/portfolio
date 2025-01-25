@@ -1,31 +1,49 @@
+"use client";
 import Image from "next/image";
-
+import { TypewriterEffectSmooth } from "./ui/typewritter-effect";
+import { TextAnimate } from "./ui/text-animate";
+import { motion } from "framer-motion";
 const Header = () => {
+  const words = [{ text: " Creating web applications with love!" }];
   return (
-    <div className="mb-5 flex w-full flex-col items-start justify-between  md:flex-row md:space-x-14">
-      <div className="mt-6 flex flex-col md:w-3/4">
-        <h1 className="mb-2 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-          Soham Maury
+    <div className="mb-5 sm:mb-0 flex w-full flex-col items-start justify-between  md:flex-row md:space-x-14">
+      <div className="mt-6  flex flex-col md:w-3/4">
+        <h1 className="mb-2  text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+          <TextAnimate animation="blurInUp" by="character">
+            Aditya Patil
+          </TextAnimate>
         </h1>
 
         <div className="relative mb-5 flex-wrap items-center text-lg leading-7 text-zinc-700 dark:text-zinc-400">
-          Full-Stack Developer crafting elegant solutions that inspire and
-          deliver value.
+          <span>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+              className="  mt-2 sm:mt-0 text-md sm:text-xl font-semibold tracking-tight  dark:text-white "
+            >
+              Full Stack Developer | Freelancer
+            </motion.p>
+            <TypewriterEffectSmooth
+              words={words}
+              className="text-2xl font-bold dark:text-white"
+            />
+          </span>
         </div>
       </div>
 
       <div className="relative order-first shrink p-4 md:order-last md:p-4">
         <a
-          href="https://bento.me/Itzsoham"
+          href="https://bento.me/hm-aditya"
           target="__blank"
           className="relative  z-[5] block size-20 overflow-hidden rounded bg-white  shadow-xl ring-1 ring-slate-900/5"
         >
           <Image
             fill
             className="bg-gray-100 object-contain"
-            src="/avatar2.jpg"
+            src="/avatar2.png"
             sizes="20"
-            alt="Soham Maury"
+            alt="Aditya Patil"
           />
         </a>
         <div className="z-0">
