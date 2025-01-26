@@ -1,12 +1,18 @@
-
 import {
   BanknoteIcon,
   CodeXml,
+  Coffee,
+  File,
+  Github,
+  HomeIcon,
   Laptop,
+  LaptopMinimal,
+  Linkedin,
+  LucideTwitter,
+  Mail,
   ShoppingCartIcon,
   VideoIcon,
 } from "lucide-react";
-
 
 export interface linksType {
   name: string;
@@ -31,6 +37,44 @@ export const Links = [
   //   link: "/etc",
   // },
 ];
+
+export const SocialsData = {
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/projects", icon: LaptopMinimal, label: "Projects" },
+    {href:"https://drive.google.com/file/d/1T2w5OsduW8T8QGfBEVgJpUv2oVIKa9tL/view?usp=sharing",icon:File,label:"Resume"},
+  ],
+  contact: {
+    social: {
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/hm-aditya",
+        icon: Github,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/aditya-patil-893808274/",
+        icon: Linkedin,
+      },
+      X: {
+        name: "X",
+        url: "https://x.com/hm__aditya",
+        icon: LucideTwitter,
+      },
+      email: {
+        name: "Email",
+        url: "mailto:patilad3618@gmail.com",
+        icon: Mail,
+      },
+      BuyMeACoffee: {
+        name: "BuyMeACoffee",
+        url: "https://www.buymeacoffee.com/hm_aditya",
+        icon: Coffee,
+      }
+    },
+  },
+};
+
 
 export const Skills = [
   "Javascript",
@@ -71,9 +115,27 @@ export const Projects = [
       "TailwindCSS",
       "Kinde-Auth",
       "Uploadthing",
-      "Upstash Redis",
+      "Redis",
       "Stripe",
       "Chart.js",
+    ],
+  },
+  
+  {
+    title: "PayMe",
+    description:
+      "A payment web application using Next.js for the frontend and PostgreSQL with Prisma ORM for database management with a dummy bankwebhook server for processing transactions.",
+    href: "https://github.com/hm-aditya/PayMe",
+    icon: BanknoteIcon,
+    tags: [
+      "Next.js",
+      "TailwindCSS",
+      "Prisma",
+      "Postgres",
+      "Docker",
+      "Express",
+      "Node.js",
+      "TurboRepo",
     ],
   },
   {
@@ -88,19 +150,6 @@ export const Projects = [
       "ShadCN",
       "Magic-UI",
       "Accternity-UI",
-    ],
-  },
-  {
-    title: "PayMe",
-    description:
-      "A payment web application using Next.js for the frontend and PostgreSQL with Prisma ORM for database management with a dummy bankwebhook server for processing transactions.",
-    href: "https://github.com/hm-aditya/PayMe",
-    icon: BanknoteIcon,
-    tags: [
-      "Next.js",
-      "TailwindCSS",
-      "Prisma",
-      "Postgres,Docker,Express,Node.js,TurboRepo",
     ],
   },
   {

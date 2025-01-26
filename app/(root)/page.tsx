@@ -1,4 +1,6 @@
+"use client";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Skill from "@/components/Skill";
@@ -11,6 +13,7 @@ const Root = () => {
       <About/>
       <Skill/>
       <Projects/>
+      <Contact/>
     </div>
   );
 };

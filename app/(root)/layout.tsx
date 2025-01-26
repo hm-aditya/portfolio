@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "@/components/navbar";
+
 
 export default function RootLayout({
   children,
@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="h-screen bg-white dark:bg-zinc-900">
-      <Navbar />
+     
       <main className="mx-auto my-0 flex w-full max-w-4xl items-center justify-between px-8 ">
         {children}
       </main>

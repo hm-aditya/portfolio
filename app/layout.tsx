@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import React from "react";
 
 import ThemeProvider from "@/context/Theme";
+import Navbar from "@/components/navbar";
 
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
-        >
+        > <Navbar/>
           {children}
         </ThemeProvider>
       </body>
