@@ -38,7 +38,7 @@ export const SocialsDataPC = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: LaptopMinimal, label: "Projects" },
-    {href:"https://drive.google.com/file/d/1qCL2dg_Juh2vSq5dpifIxuxnwddMm1ZX/view?usp=drive_link",icon:File,label:"Resume"},
+    {href:"https://drive.google.com/file/d/1qCL2dg_Juh2vSq5dpifIxuxnwddMm1ZX/view",icon:File,label:"Resume"},
   ],
   contact: {
     social: {
