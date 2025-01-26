@@ -212,3 +212,12 @@ export const UpcomingProjects = [
     ],
   },
 ];
+
+export const ResourcesData=[{
+  title:"100xdevs",
+  description:"Fullstack Web Developer 100xdevs Cohort 2",
+  href:"https://100xdevs.com/",
+  icon:CodeXml
+}
+
+]
