@@ -17,6 +17,7 @@ export default function ProjectCard({
     <div>
       <h3 className="text-2xl font-bold dark:text-white">
         <a href={href}>{title}</a>
+        {icon}
         </h3>
       <p className="text-zinc-700 dark:text-zinc-400">{description}</p>
       <div className="mt-4 flex flex-wrap gap-2">

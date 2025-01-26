@@ -3,13 +3,14 @@ import Image from "next/image";
 import { TypewriterEffectSmooth } from "./ui/typewritter-effect";
 import { TextAnimate } from "./ui/text-animate";
 import { motion } from "framer-motion";
+
 const Header = () => {
   const words = [{ text: " Creating web applications with love!" }];
   return (
     <div className="mb-5 sm:mb-0 flex w-full flex-col items-start justify-between  md:flex-row md:space-x-14">
       <div className="mt-6  flex flex-col md:w-3/4">
         <h1 className="mb-2  text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-          <TextAnimate animation="blurInUp" by="character">
+          <TextAnimate >
             Aditya Patil
           </TextAnimate>
         </h1>
