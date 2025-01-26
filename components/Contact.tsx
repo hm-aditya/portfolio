@@ -4,7 +4,7 @@ import { Social } from "./ui/Social";
 
 export default function Contact() {
   return (
-    <div className="mx-auto flex max-w-screen-md flex-col items-center justify-center px-5 pt-12">
+    <div className="mx-auto flex max-w-screen-md flex-col items-center justify-center px-5 pt-12 p-4">
       <h1 className="text-3xl font-bold text-center dark:text-white mb-4">
         Get in touch
       </h1>

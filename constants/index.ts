@@ -31,14 +31,10 @@ export const Links = [
   {
     name: "Resources",
     link: "/resources",
-  },
-  // {
-  //   name: "Etc",
-  //   link: "/etc",
-  // },
+  }
 ];
 
-export const SocialsData = {
+export const SocialsDataPC = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: LaptopMinimal, label: "Projects" },
@@ -70,6 +66,32 @@ export const SocialsData = {
         name: "BuyMeACoffee",
         url: "https://www.buymeacoffee.com/hm_aditya",
         icon: Coffee,
+      }
+    },
+  },
+};
+
+export const SocialsData = {
+  navbar: [
+    { href: "/projects", icon: LaptopMinimal, label: "Projects" },
+    {href:"https://drive.google.com/file/d/1T2w5OsduW8T8QGfBEVgJpUv2oVIKa9tL/view?usp=sharing",icon:File,label:"Resume"},
+  ],
+  contact: {
+    social: {
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/hm-aditya",
+        icon: Github,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/aditya-patil-893808274/",
+        icon: Linkedin,
+      },
+      email: {
+        name: "Email",
+        url: "mailto:patilad3618@gmail.com",
+        icon: Mail,
       }
     },
   },
@@ -153,8 +175,8 @@ export const Projects = [
     ],
   },
   {
-    title: "light saas landing page",
-    description: "Landing page for light saas web application",
+    title: "Light SaaS landing page",
+    description: "Landing page for light SaaS web application",
     href: "https://light-saas-landing-page-woad.vercel.app/",
     tags: ["Next.js", "TailwindCSS", "Framer Motion", "ShadCN"],
     icon: CodeXml,
@@ -193,7 +215,6 @@ export const UpcomingProjects = [
       "Framer Motion",
       "ShadCN",
       "Clerk",
-      "Apis of Notion,Open AI,Slack,Discord,Instagram,Linkedin etc",
     ],
   },
   {

@@ -1,6 +1,5 @@
 "use client";
 
-
 import Link from "next/link";
 import React from "react";
 
@@ -15,11 +14,17 @@ import {
 import { cn } from "@/lib/utils";
 import { Dock, DockIcon } from "./dock";
 
-import { SocialsData as DATA } from "@/constants";
+import { SocialsDataPC, SocialsData } from "@/constants";
 
 export function Social() {
+  let DATA;
+  if (window.innerWidth > 768) {
+    DATA = SocialsDataPC;
+  } else {
+    DATA = SocialsData;
+  }
   return (
-    <div>
+    <div className="p-2">
       <TooltipProvider>
         <Dock
           direction="middle"
@@ -34,7 +39,7 @@ export function Social() {
                     aria-label={item.label}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full"
+                      "size-12  rounded-full"
                     )}
                   >
                     <item.icon className="size-4" />

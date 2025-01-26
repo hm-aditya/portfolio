@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div className='relative  mb-16 mx-auto  max-w-2xl w-screen overflow-hidden'>
+    <div className='relative p-4 mb-16 mx-auto  max-w-2xl w-screen overflow-hidden'>
       <h1 className="text-3xl font-bold dark:text-white">Projects</h1>
       <p className="text-zinc-700 dark:text-zinc-400 font-semibold">
         Below are some of my recent projects. I&apos;ve worked on a wide range of
