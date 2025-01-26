@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -17,12 +17,23 @@ import { Dock, DockIcon } from "./dock";
 import { SocialsDataPC, SocialsData } from "@/constants";
 
 export function Social() {
-  let DATA;
-  if (window.innerWidth > 768) {
-    DATA = SocialsDataPC;
-  } else {
-    DATA = SocialsData;
-  }
+  const [DATA, setDATA] = useState(SocialsData); // Default to SocialsData
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDATA(window.innerWidth > 768 ? SocialsDataPC : SocialsData);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="p-2">
       <TooltipProvider>
