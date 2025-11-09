@@ -13,6 +13,7 @@ import {
   ShoppingCartIcon,
   VideoIcon,
 } from "lucide-react";
+import { title } from "process";
 
 export interface linksType {
   name: string;
@@ -38,7 +39,7 @@ export const SocialsDataPC = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: LaptopMinimal, label: "Projects" },
-    {href:"https://drive.google.com/file/d/1qCL2dg_Juh2vSq5dpifIxuxnwddMm1ZX",icon:File,label:"Resume"},
+    {href:"https://drive.google.com/file/d/14tpuEgUc95hJXtQDuoufu0tfPh1Qx0AM/view?usp=drivesdk",icon:File,label:"Resume"},
   ],
   contact: {
     social: {
@@ -74,7 +75,7 @@ export const SocialsDataPC = {
 export const SocialsData = {
   navbar: [
     { href: "/projects", icon: LaptopMinimal, label: "Projects" },
-    {href:"https://drive.google.com/file/d/1qCL2dg_Juh2vSq5dpifIxuxnwddMm1ZX",icon:File,label:"Resume"},
+    {href:"https://drive.google.com/file/d/14tpuEgUc95hJXtQDuoufu0tfPh1Qx0AM/view?usp=drivesdk",icon:File,label:"Resume"},
   ],
   contact: {
     social: {
@@ -142,7 +143,13 @@ export const Projects = [
       "Chart.js",
     ],
   },
-  
+  {
+    title:"PdfSummarizer",
+    description:"A full-stack AI-powered application to summarize and query PDF documents using Next.js (frontend) and Express.js (backend).",
+    href:"https://pdfsummarizer-three.vercel.app/",
+    icon:File,
+    tags:["Next.js","TailwindCSS","Google Gemini API","langchain","Vercel","ChromaDB","Express","Node.js"],
+  },
   {
     title: "PayMe",
     description:
