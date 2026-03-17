@@ -11,6 +11,7 @@ import {
   LucideTwitter,
   Mail,
   ShoppingCartIcon,
+  User,
   VideoIcon,
 } from "lucide-react";
 import { title } from "process";
@@ -168,10 +169,23 @@ export const Projects = [
     ],
   },
   {
+    title: "Positivus",
+    description: "Frontend Assignment : An Digital Marketing agency Landing page. Made for an internship assignment.",
+    href: " https://positivus-one-ruddy.vercel.app/",
+    icon: Laptop,
+    tags: [
+      "React.js",
+      "TailwindCSS",
+      "Lucide-React",
+      "Vercel",
+      "GitHub",
+    ],
+  },
+  {
     title: "Portfolio",
     description: "Portfolio made using Next Js",
     href: "https://hmaditya.vercel.app/",
-    icon: Laptop,
+    icon: User,
     tags: [
       "Next.js",
       "TailwindCSS",
