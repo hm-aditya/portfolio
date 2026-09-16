@@ -124,6 +124,40 @@ export const Skills = [
   "AWS EC2 and S3",
 ];
 
+export const ExperienceData=[
+  {
+    job_role:"Full Stack Developer Intern",
+    id:1,
+    company:"LeMiCi",
+    duration:{
+      start:"Jan 2026",
+      end:"Aug 2026"
+    },
+    description:[
+       "Contributed to the LeMiCi web platform using React.js, JavaScript,and Tailwind CSS, building responsive and reusable UI components. Developed pixel-perfect user interfaces from Figma designs for franchise, association, listing, and detail pages.",
+       "Collaborated with designers and developers to deliver production-ready features on schedule.",
+       "Worked in a team, delivering features on schedule in a fast-paced agile environment.",
+       "Integrated frontend components with mock REST APIs using Axios and Mockoon to enable parallel frontend development. ",
+        "Prepared API documentation, including endpoint specifications, request/response formats, and frontend integration details"
+      ]
+  },{
+    job_role:"Frontend Developer Intern",
+    id:2,
+    company:"Gravitones Technologies",
+    duration:{
+      start:"May 2025",
+      end:"July 2025"
+    },
+    description:[
+      " Contributed to an EdTech webplatform using Next.js, TypeScript,and Tailwind CSS. Built responsive and dynamic UI for course browsing, course detail pages, test modules, and purchasing flows.",
+      "Enhanced UX with smooth UI transitions using Framer Motion. Managed global state with Zustand for seamless interaction across views.",
+      "Collaborated with designers and developers to deliver production-ready features on schedule.",
+      " Collaborated with backend team using Postman API to ensure consistent and accurate data handling.",
+      "Worked in a team, delivering features on schedule in a fast-paced agile environment."
+    ]
+    }
+]
+
 export const Projects = [
   {
     title: "AvenueMart",
