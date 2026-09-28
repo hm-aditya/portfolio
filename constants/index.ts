@@ -76,7 +76,7 @@ export const SocialsDataPC = {
 export const SocialsData = {
   navbar: [
     { href: "/projects", icon: LaptopMinimal, label: "Projects" },
-    {href:"https://drive.google.com/file/d/14tpuEgUc95hJXtQDuoufu0tfPh1Qx0AM/view?usp=drivesdk",icon:File,label:"Resume"},
+    {href:"https://drive.google.com/drive/folders/12yl3omc9ADvWmD_j_faOx7WJOom0WT0w",icon:File,label:"Resume"},
   ],
   contact: {
     social: {
